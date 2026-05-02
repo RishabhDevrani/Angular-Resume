@@ -1,0 +1,71 @@
+.resume-card {
+  padding: 26px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card-title .material-icons-outlined {
+  color: var(--primary);
+}
+
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.35rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+
+.timeline-item:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.timeline-item > .material-icons-outlined {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--accent);
+  background: #ecfdf5;
+  border-radius: 12px;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p,
+li {
+  margin-top: 7px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+ul {
+  display: grid;
+  gap: 8px;
+  padding-left: 18px;
+}
+
+@media (max-width: 680px) {
+  .resume-card {
+    padding: 20px;
+  }
+}

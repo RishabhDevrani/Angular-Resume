@@ -1,0 +1,21 @@
+<article class="resume-card">
+  <h2>
+    <span class="material-icons-outlined" aria-hidden="true">contact_mail</span>
+    Contact Details
+  </h2>
+
+  <ul>
+    <li>
+      <span class="material-icons-outlined" aria-hidden="true">location_on</span>
+      <span>{{ contact.address }}</span>
+    </li>
+    <li>
+      <span class="material-icons-outlined" aria-hidden="true">mail</span>
+      <a [href]="'mailto:' + contact.email">{{ contact.email }}</a>
+    </li>
+    <li>
+      <span class="material-icons-outlined" aria-hidden="true">call</span>
+      <a [href]="'tel:' + contact.phone">{{ contact.phone }}</a>
+    </li>
+  </ul>
+</article>

@@ -1,0 +1,30 @@
+<main class="resume-page" @resumeIntro>
+  <header class="resume-header">
+    <div>
+      <p class="eyebrow">Professional Profile</p>
+      <h1>My Resume</h1>
+      <p class="clock">
+        <span class="material-icons-outlined" aria-hidden="true">schedule</span>
+        {{ currentDateTime | date: 'fullDate' }} · {{ currentDateTime | date: 'mediumTime' }}
+      </p>
+    </div>
+
+    <button class="download-button no-print" type="button" (click)="downloadPdf()" aria-label="Download resume as PDF">
+      <span class="material-icons-outlined" aria-hidden="true">download</span>
+      <span>Download PDF</span>
+    </button>
+  </header>
+
+  <section class="resume-shell">
+    <aside class="profile-column">
+      <app-profile-picture [profile]="profilePicture" />
+      <app-contact-details [contact]="contactDetails" />
+    </aside>
+
+    <section class="content-column">
+      <app-personal-details [details]="personalDetails" />
+      <app-qualification [qualification]="qualificationDetails" />
+      <app-industry-exposure [exposure]="industryExposure" />
+    </section>
+  </section>
+</main>

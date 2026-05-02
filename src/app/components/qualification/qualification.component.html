@@ -1,0 +1,28 @@
+<article class="resume-card">
+  <div class="card-title">
+    <span class="material-icons-outlined" aria-hidden="true">military_tech</span>
+    <h2>Qualification</h2>
+  </div>
+
+  <div class="education-grid">
+    @for (item of qualification.education; track item.label) {
+      <section class="education-item">
+        <span class="material-icons-outlined" aria-hidden="true">{{ item.icon }}</span>
+        <div>
+          <p>{{ item.label }}</p>
+          <h3>{{ item.institution }}</h3>
+          <strong>{{ item.result }}</strong>
+        </div>
+      </section>
+    }
+  </div>
+
+  <div class="social-links">
+    @for (link of qualification.links; track link.label) {
+      <a [href]="link.url" target="_blank" rel="noreferrer">
+        <span class="material-icons-outlined" aria-hidden="true">{{ link.icon }}</span>
+        {{ link.label }}
+      </a>
+    }
+  </div>
+</article>

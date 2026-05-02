@@ -1,0 +1,89 @@
+.resume-card {
+  padding: 26px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.section-heading > .material-icons-outlined {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border-radius: 14px;
+}
+
+p,
+h2,
+dl {
+  margin: 0;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 3px;
+  font-size: clamp(1.65rem, 4vw, 2.55rem);
+  line-height: 1.06;
+  letter-spacing: 0;
+}
+
+.role {
+  margin-top: 18px;
+  color: var(--primary);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.summary {
+  margin-top: 10px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.detail-grid div {
+  min-width: 0;
+  padding: 14px;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+dt {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+dd {
+  margin: 6px 0 0;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 680px) {
+  .resume-card {
+    padding: 20px;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

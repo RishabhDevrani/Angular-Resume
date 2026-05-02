@@ -1,0 +1,18 @@
+<article class="resume-card">
+  <div class="card-title">
+    <span class="material-icons-outlined" aria-hidden="true">work_history</span>
+    <h2>Industry Exposure</h2>
+  </div>
+
+  <section class="timeline-item">
+    <span class="material-icons-outlined" aria-hidden="true">rocket_launch</span>
+    <div>
+      <h3>Live Projects</h3>
+      <ul>
+        @for (project of exposure.liveProjects; track project) {
+          <li>{{ project }}</li>
+        }
+      </ul>
+    </div>
+  </section>
+</article>
