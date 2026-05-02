@@ -89,12 +89,12 @@ export class AppComponent implements OnInit, OnDestroy {
     links: [
       {
         label: 'GitHub',
-        url: 'https://github.com/rishabh-dev',
+        url: 'https://github.com/RishabhDevrani',
         icon: 'code'
       },
       {
         label: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/rishabh-dev',
+        url: 'https://www.linkedin.com/in/rishabh-devrani-a3727a226',
         icon: 'business_center'
       }
     ]
